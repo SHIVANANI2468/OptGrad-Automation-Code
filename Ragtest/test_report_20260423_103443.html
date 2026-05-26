@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Class-10 Maths RAG — Automation Test Report</title>
+
+<style>
+  body { font-family: Arial, sans-serif; margin: 30px; color: #222; }
+  h1   { color: #1a3a6c; }
+  h2   { color: #2c5f9e; border-bottom: 2px solid #ddd; padding-bottom: 6px; }
+  .summary-box { display: flex; gap: 20px; flex-wrap: wrap; margin: 20px 0; }
+  .metric { background:#f0f4fa; border-radius:8px; padding:16px 24px; text-align:center; }
+  .metric .val { font-size: 2rem; font-weight: bold; }
+  .pass { color: #1a7a1a; } .fail { color: #c0392b; }
+  table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+  th  { background: #2c5f9e; color: white; padding: 10px 12px; text-align:left; }
+  td  { padding: 9px 12px; border-bottom: 1px solid #ddd; vertical-align: top; }
+  tr:nth-child(even) { background: #f9f9f9; }
+  .badge-pass { background:#27ae60;color:white;padding:3px 8px;border-radius:4px;font-weight:bold; }
+  .badge-fail { background:#e74c3c;color:white;padding:3px 8px;border-radius:4px;font-weight:bold; }
+  .score-bar-container { background:#ddd; border-radius:4px; height:12px; width:100px; display:inline-block; }
+  .score-bar { background:#2c5f9e; border-radius:4px; height:12px; }
+  details summary { cursor:pointer; color:#2c5f9e; font-weight:bold; }
+  pre { background:#f4f4f4; padding:10px; border-radius:4px;
+        white-space:pre-wrap; word-break:break-word; font-size:0.85rem; }
+</style>
+
+</head><body>
+<h1>📐 Class-10 Mathematics RAG LLM — Automation Test Report</h1>
+<p><b>Textbook:</b> 10 Mathematics EM 2024-25 (Telangana SCERT) &nbsp;|&nbsp;
+   <b>Run at:</b> 2026-04-23 10:34:43 &nbsp;|&nbsp;
+   <b>Pass threshold:</b> 40%</p>
+
+<h2>Summary</h2>
+<div class="summary-box">
+  <div class="metric"><div class="val">20</div>Total Tests</div>
+  <div class="metric pass"><div class="val">0</div>Passed</div>
+  <div class="metric fail"><div class="val">20</div>Failed</div>
+  <div class="metric"><div class="val">0.0%</div>Pass Rate</div>
+  <div class="metric"><div class="val">0.0%</div>Avg Combined Score</div>
+  <div class="metric"><div class="val">0.0%</div>Avg Keyword Hit-Rate</div>
+</div>
+
+<h2>Detailed Results</h2>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th><th>Chapter</th><th>Question</th><th>Reference Answer</th>
+      <th>AI Response</th>
+      <th>Seq Sim</th><th>Token F1</th><th>KW Hit</th><th>Combined</th>
+      <th>Status</th><th>Time</th>
+    </tr>
+  </thead>
+  <tbody>
+        <tr>
+          <td>TC01</td>
+          <td>Ch-1: Real Numbers</td>
+          <td>Show that 5 - root 3 is irrational.</td>
+          <td>
+            <details><summary>View reference</summary>
+            <pre>Assume 5 - sqrt(3) is rational. Then we can find coprimes a and b (b ≠ 0) such that 5 - sqrt(3) = a/b. Rearranging gives sqrt(3) = 5 - a/b = (5b-a)/b. Since a and b are integers, (5b-a)/b is rational, implying sqrt(3) is rational. But this contradicts the fact that sqrt(3) is irrational. Therefore our assumption is wrong and 5 - sqrt(3) is irrational.</pre>
+            </details>
+          </td>
+          <td>
+            <details><summary>View response</summary>
+            <pre>(no response)</pre>
+            </details>
+            <br><b>Error:</b> TimeoutException: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6cb61a8e5+14e45]
+	chromedriver!GetHandleVerifier [0x7ff6cb61a950+14eb0]
+	chromedriver!(No symbol) [0x7ff6cb38d6ed]
+	chromedriver!(No symbol) [0x7ff6cb3e6cfe]
+	chromedriver!(No symbol) [0x7ff6cb3e700c]
+	chromedriver!(No symbol) [0x7ff6cb437cb7]
+	chromedriver!(No symbol) [0x7ff6cb43483b]
+	chromedriver!(No symbol) [0x7ff6cb3d90e8]
+	chromedriver!(No symbol) [0x7ff6cb3d9fc3]
+	chromedriver!GetHandleVerifier [0x7ff6cb930149+32a6a9]
+	chromedriver!GetHandleVerifier [0x7ff6cb92a715+324c75]
+	chromedriver!GetHandleVerifier [0x7ff6cb94c012+346572]
+	chromedriver!GetHandleVerifier [0x7ff6cb637cb5+32215]
+	chromedriver!GetHandleVerifier [0x7ff6cb64087c+3addc]
+	chromedriver!GetHandleVerifier [0x7ff6cb6240e4+1e644]
+	chromedriver!GetHandleVerifier [0x7ff6cb624296+1e7f6]
+	chromedriver!GetHandleVerifier [0x7ff6cb608737+2c97]
+	KERNEL32!BaseThreadInitThunk [0x7ffd8776e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffd891cc3fc+2c]
+
+          </td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><span class="badge-fail">FAIL</span></td>
+          <td>30.1s</td>
+        </tr>
+        <tr>
+          <td>TC02</td>
+          <td>Ch-1: Real Numbers</td>
+          <td>State the Fundamental Theorem of Arithmetic.</td>
+          <td>
+            <details><summary>View reference</summary>
+            <pre>Every composite number can be expressed (factorized) as a product of primes, and this factorization is unique, apart from the order in which the prime factors occur.</pre>
+            </details>
+          </td>
+          <td>
+            <details><summary>View response</summary>
+            <pre>(no response)</pre>
+            </details>
+            <br><b>Error:</b> TimeoutException: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6cb61a8e5+14e45]
+	chromedriver!GetHandleVerifier [0x7ff6cb61a950+14eb0]
+	chromedriver!(No symbol) [0x7ff6cb38d6ed]
+	chromedriver!(No symbol) [0x7ff6cb3e6cfe]
+	chromedriver!(No symbol) [0x7ff6cb3e700c]
+	chromedriver!(No symbol) [0x7ff6cb437cb7]
+	chromedriver!(No symbol) [0x7ff6cb43483b]
+	chromedriver!(No symbol) [0x7ff6cb3d90e8]
+	chromedriver!(No symbol) [0x7ff6cb3d9fc3]
+	chromedriver!GetHandleVerifier [0x7ff6cb930149+32a6a9]
+	chromedriver!GetHandleVerifier [0x7ff6cb92a715+324c75]
+	chromedriver!GetHandleVerifier [0x7ff6cb94c012+346572]
+	chromedriver!GetHandleVerifier [0x7ff6cb637cb5+32215]
+	chromedriver!GetHandleVerifier [0x7ff6cb64087c+3addc]
+	chromedriver!GetHandleVerifier [0x7ff6cb6240e4+1e644]
+	chromedriver!GetHandleVerifier [0x7ff6cb624296+1e7f6]
+	chromedriver!GetHandleVerifier [0x7ff6cb608737+2c97]
+	KERNEL32!BaseThreadInitThunk [0x7ffd8776e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffd891cc3fc+2c]
+
+          </td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><span class="badge-fail">FAIL</span></td>
+          <td>30.0s</td>
+        </tr>
+        <tr>
+          <td>TC03</td>
+          <td>Ch-1: Real Numbers</td>
+          <td>What is Euclid's Division Algorithm? State the Division Lemma.</td>
+          <td>
+            <details><summary>View reference</summary>
+            <pre>Euclid's Division Lemma (Theorem): Given positive integers a and b, there exist unique whole numbers q (quotient) and r (remainder) such that a = bq + r, where 0 ≤ r < b. This result is used to compute the HCF of two positive integers.</pre>
+            </details>
+          </td>
+          <td>
+            <details><summary>View response</summary>
+            <pre>(no response)</pre>
+            </details>
+            <br><b>Error:</b> TimeoutException: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6cb61a8e5+14e45]
+	chromedriver!GetHandleVerifier [0x7ff6cb61a950+14eb0]
+	chromedriver!(No symbol) [0x7ff6cb38d6ed]
+	chromedriver!(No symbol) [0x7ff6cb3e6cfe]
+	chromedriver!(No symbol) [0x7ff6cb3e700c]
+	chromedriver!(No symbol) [0x7ff6cb437cb7]
+	chromedriver!(No symbol) [0x7ff6cb43483b]
+	chromedriver!(No symbol) [0x7ff6cb3d90e8]
+	chromedriver!(No symbol) [0x7ff6cb3d9fc3]
+	chromedriver!GetHandleVerifier [0x7ff6cb930149+32a6a9]
+	chromedriver!GetHandleVerifier [0x7ff6cb92a715+324c75]
+	chromedriver!GetHandleVerifier [0x7ff6cb94c012+346572]
+	chromedriver!GetHandleVerifier [0x7ff6cb637cb5+32215]
+	chromedriver!GetHandleVerifier [0x7ff6cb64087c+3addc]
+	chromedriver!GetHandleVerifier [0x7ff6cb6240e4+1e644]
+	chromedriver!GetHandleVerifier [0x7ff6cb624296+1e7f6]
+	chromedriver!GetHandleVerifier [0x7ff6cb608737+2c97]
+	KERNEL32!BaseThreadInitThunk [0x7ffd8776e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffd891cc3fc+2c]
+
+          </td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><span class="badge-fail">FAIL</span></td>
+          <td>30.0s</td>
+        </tr>
+        <tr>
+          <td>TC04</td>
+          <td>Ch-1: Real Numbers</td>
+          <td>Find the HCF of 900 and 270 using Euclid's division algorithm.</td>
+          <td>
+            <details><summary>View reference</summary>
+            <pre>Apply Euclid's algorithm: 900 = 270 × 3 + 90; 270 = 90 × 3 + 0. Since remainder is 0, HCF(900, 270) = 90.</pre>
+            </details>
+          </td>
+          <td>
+            <details><summary>View response</summary>
+            <pre>(no response)</pre>
+            </details>
+            <br><b>Error:</b> InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=147.0.7727.102); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6cb61a8e5+14e45]
+	chromedriver!GetHandleVerifier [0x7ff6cb61a950+14eb0]
+	chromedriver!(No symbol) [0x7ff6cb38d6ed]
+	chromedriver!(No symbol) [0x7ff6cb378762]
+	chromedriver!(No symbol) [0x7ff6cb39f00c]
+	chromedriver!(No symbol) [0x7ff6cb417170]
+	chromedriver!(No symbol) [0x7ff6cb434122]
+	chromedriver!(No symbol) [0x7ff6cb3d90e8]
+	chromedriver!(No symbol) [0x7ff6cb3d9fc3]
+	chromedriver!GetHandleVerifier [0x7ff6cb930149+32a6a9]
+	chromedriver!GetHandleVerifier [0x7ff6cb92a715+324c75]
+	chromedriver!GetHandleVerifier [0x7ff6cb94c012+346572]
+	chromedriver!GetHandleVerifier [0x7ff6cb637cb5+32215]
+	chromedriver!GetHandleVerifier [0x7ff6cb64087c+3addc]
+	chromedriver!GetHandleVerifier [0x7ff6cb6240e4+1e644]
+	chromedriver!GetHandleVerifier [0x7ff6cb624296+1e7f6]
+	chromedriver!GetHandleVerifier [0x7ff6cb608737+2c97]
+	KERNEL32!BaseThreadInitThunk [0x7ffd8776e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffd891cc3fc+2c]
+
+          </td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><span class="badge-fail">FAIL</span></td>
+          <td>6.7s</td>
+        </tr>
+        <tr>
+          <td>TC05</td>
+          <td>Ch-1: Real Numbers</td>
+          <td>Without performing actual division, determine whether the decimal expansion of 16/125 is terminating or non-terminating repeating.</td>
+          <td>
+            <details><summary>View reference</summary>
+            <pre>125 = 5^3. Since the denominator has only the prime factor 5 (of the form 2^n × 5^m), the decimal expansion of 16/125 is terminating. 16/125 = 0.128.</pre>
+            </details>
+          </td>
+          <td>
+            <details><summary>View response</summary>
+            <pre>(no response)</pre>
+            </details>
+            <br><b>Error:</b> InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6cb61a8e5+14e45]
+	chromedriver!GetHandleVerifier [0x7ff6cb61a950+14eb0]
+	chromedriver!(No symbol) [0x7ff6cb38d4d6]
+	chromedriver!(No symbol) [0x7ff6cb3d8166]
+	chromedriver!(No symbol) [0x7ff6cb40ff32]
+	chromedriver!(No symbol) [0x7ff6cb40a191]
+	chromedriver!(No symbol) [0x7ff6cb409433]
+	chromedriver!(No symbol) [0x7ff6cb356005]
+	chromedriver!GetHandleVerifier [0x7ff6cb930149+32a6a9]
+	chromedriver!GetHandleVerifier [0x7ff6cb92a715+324c75]
+	chromedriver!GetHandleVerifier [0x7ff6cb94c012+346572]
+	chromedriver!GetHandleVerifier [0x7ff6cb637cb5+32215]
+	chromedriver!GetHandleVerifier [0x7ff6cb64087c+3addc]
+	chromedriver!(No symbol) [0x7ff6cb354d9a]
+	chromedriver!GetHandleVerifier [0x7ff6cba960a8+490608]
+	KERNEL32!BaseThreadInitThunk [0x7ffd8776e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffd891cc3fc+2c]
+
+          </td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><span class="badge-fail">FAIL</span></td>
+          <td>0.0s</td>
+        </tr>
+        <tr>
+          <td>TC06</td>
+          <td>Ch-1: Real Numbers</td>
+          <td>Show that 3√2 is irrational.</td>
+          <td>
+            <details><summary>View reference</summary>
+            <pre>Assume 3√2 is rational. Then 3√2 = a/b (coprimes, b≠0), so √2 = a/(3b). Since a and b are integers, a/(3b) is rational, implying √2 is rational. This contradicts the known fact that √2 is irrational. Hence 3√2 is irrational.</pre>
+            </details>
+          </td>
+          <td>
+            <details><summary>View response</summary>
+            <pre>(no response)</pre>
+            </details>
+            <br><b>Error:</b> InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6cb61a8e5+14e45]
+	chromedriver!GetHandleVerifier [0x7ff6cb61a950+14eb0]
+	chromedriver!(No symbol) [0x7ff6cb38d4d6]
+	chromedriver!(No symbol) [0x7ff6cb3d8166]
+	chromedriver!(No symbol) [0x7ff6cb40ff32]
+	chromedriver!(No symbol) [0x7ff6cb40a191]
+	chromedriver!(No symbol) [0x7ff6cb409433]
+	chromedriver!(No symbol) [0x7ff6cb356005]
+	chromedriver!GetHandleVerifier [0x7ff6cb930149+32a6a9]
+	chromedriver!GetHandleVerifier [0x7ff6cb92a715+324c75]
+	chromedriver!GetHandleVerifier [0x7ff6cb94c012+346572]
+	chromedriver!GetHandleVerifier [0x7ff6cb637cb5+32215]
+	chromedriver!GetHandleVerifier [0x7ff6cb64087c+3addc]
+	chromedriver!(No symbol) [0x7ff6cb354d9a]
+	chromedriver!GetHandleVerifier [0x7ff6cba960a8+490608]
+	KERNEL32!BaseThreadInitThunk [0x7ffd8776e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffd891cc3fc+2c]
+
+          </td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><span class="badge-fail">FAIL</span></td>
+          <td>0.0s</td>
+        </tr>
+        <tr>
+          <td>TC07</td>
+          <td>Ch-2: Sets</td>
+          <td>What is a set? Give two examples of sets used in mathematics.</td>
+          <td>
+            <details><summary>View reference</summary>
+            <pre>A set is a collection of distinct, well-defined objects. Examples: N = {1, 2, 3, ...} (natural numbers); W = {0, 1, 2, 3, ...} (whole numbers).</pre>
+            </details>
+          </td>
+          <td>
+            <details><summary>View response</summary>
+            <pre>(no response)</pre>
+            </details>
+            <br><b>Error:</b> InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6cb61a8e5+14e45]
+	chromedriver!GetHandleVerifier [0x7ff6cb61a950+14eb0]
+	chromedriver!(No symbol) [0x7ff6cb38d4d6]
+	chromedriver!(No symbol) [0x7ff6cb3d8166]
+	chromedriver!(No symbol) [0x7ff6cb40ff32]
+	chromedriver!(No symbol) [0x7ff6cb40a191]
+	chromedriver!(No symbol) [0x7ff6cb409433]
+	chromedriver!(No symbol) [0x7ff6cb356005]
+	chromedriver!GetHandleVerifier [0x7ff6cb930149+32a6a9]
+	chromedriver!GetHandleVerifier [0x7ff6cb92a715+324c75]
+	chromedriver!GetHandleVerifier [0x7ff6cb94c012+346572]
+	chromedriver!GetHandleVerifier [0x7ff6cb637cb5+32215]
+	chromedriver!GetHandleVerifier [0x7ff6cb64087c+3addc]
+	chromedriver!(No symbol) [0x7ff6cb354d9a]
+	chromedriver!GetHandleVerifier [0x7ff6cba960a8+490608]
+	KERNEL32!BaseThreadInitThunk [0x7ffd8776e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffd891cc3fc+2c]
+
+          </td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><span class="badge-fail">FAIL</span></td>
+          <td>0.0s</td>
+        </tr>
+        <tr>
+          <td>TC08</td>
+          <td>Ch-3: Polynomials</td>
+          <td>What are the zeroes of the polynomial p(x) = x² - 2x - 3?</td>
+          <td>
+            <details><summary>View reference</summary>
+            <pre>Factor p(x): x² - 2x - 3 = (x - 3)(x + 1). Setting each factor to zero gives x = 3 and x = -1. The zeroes of p(x) are 3 and -1.</pre>
+            </details>
+          </td>
+          <td>
+            <details><summary>View response</summary>
+            <pre>(no response)</pre>
+            </details>
+            <br><b>Error:</b> InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6cb61a8e5+14e45]
+	chromedriver!GetHandleVerifier [0x7ff6cb61a950+14eb0]
+	chromedriver!(No symbol) [0x7ff6cb38d4d6]
+	chromedriver!(No symbol) [0x7ff6cb3d8166]
+	chromedriver!(No symbol) [0x7ff6cb40ff32]
+	chromedriver!(No symbol) [0x7ff6cb40a191]
+	chromedriver!(No symbol) [0x7ff6cb409433]
+	chromedriver!(No symbol) [0x7ff6cb356005]
+	chromedriver!GetHandleVerifier [0x7ff6cb930149+32a6a9]
+	chromedriver!GetHandleVerifier [0x7ff6cb92a715+324c75]
+	chromedriver!GetHandleVerifier [0x7ff6cb94c012+346572]
+	chromedriver!GetHandleVerifier [0x7ff6cb637cb5+32215]
+	chromedriver!GetHandleVerifier [0x7ff6cb64087c+3addc]
+	chromedriver!(No symbol) [0x7ff6cb354d9a]
+	chromedriver!GetHandleVerifier [0x7ff6cba960a8+490608]
+	KERNEL32!BaseThreadInitThunk [0x7ffd8776e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffd891cc3fc+2c]
+
+          </td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><span class="badge-fail">FAIL</span></td>
+          <td>0.0s</td>
+        </tr>
+        <tr>
+          <td>TC09</td>
+          <td>Ch-3: Polynomials</td>
+          <td>For a quadratic polynomial ax² + bx + c with zeroes α and β, state the relationship between zeroes and coefficients.</td>
+          <td>
+            <details><summary>View reference</summary>
+            <pre>Sum of zeroes: α + β = -b/a. Product of zeroes: α × β = c/a.</pre>
+            </details>
+          </td>
+          <td>
+            <details><summary>View response</summary>
+            <pre>(no response)</pre>
+            </details>
+            <br><b>Error:</b> InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6cb61a8e5+14e45]
+	chromedriver!GetHandleVerifier [0x7ff6cb61a950+14eb0]
+	chromedriver!(No symbol) [0x7ff6cb38d4d6]
+	chromedriver!(No symbol) [0x7ff6cb3d8166]
+	chromedriver!(No symbol) [0x7ff6cb40ff32]
+	chromedriver!(No symbol) [0x7ff6cb40a191]
+	chromedriver!(No symbol) [0x7ff6cb409433]
+	chromedriver!(No symbol) [0x7ff6cb356005]
+	chromedriver!GetHandleVerifier [0x7ff6cb930149+32a6a9]
+	chromedriver!GetHandleVerifier [0x7ff6cb92a715+324c75]
+	chromedriver!GetHandleVerifier [0x7ff6cb94c012+346572]
+	chromedriver!GetHandleVerifier [0x7ff6cb637cb5+32215]
+	chromedriver!GetHandleVerifier [0x7ff6cb64087c+3addc]
+	chromedriver!(No symbol) [0x7ff6cb354d9a]
+	chromedriver!GetHandleVerifier [0x7ff6cba960a8+490608]
+	KERNEL32!BaseThreadInitThunk [0x7ffd8776e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffd891cc3fc+2c]
+
+          </td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><span class="badge-fail">FAIL</span></td>
+          <td>0.0s</td>
+        </tr>
+        <tr>
+          <td>TC10</td>
+          <td>Ch-4: Linear Equations</td>
+          <td>When does a pair of linear equations a1x + b1y + c1 = 0 and a2x + b2y + c2 = 0 have a unique solution, no solution, and infinitely many solutions?</td>
+          <td>
+            <details><summary>View reference</summary>
+            <pre>Unique solution (consistent): a1/a2 ≠ b1/b2. Lines intersect at one point. Infinitely many solutions (consistent): a1/a2 = b1/b2 = c1/c2. Lines coincide. No solution (inconsistent): a1/a2 = b1/b2 ≠ c1/c2. Lines are parallel.</pre>
+            </details>
+          </td>
+          <td>
+            <details><summary>View response</summary>
+            <pre>(no response)</pre>
+            </details>
+            <br><b>Error:</b> InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6cb61a8e5+14e45]
+	chromedriver!GetHandleVerifier [0x7ff6cb61a950+14eb0]
+	chromedriver!(No symbol) [0x7ff6cb38d4d6]
+	chromedriver!(No symbol) [0x7ff6cb3d8166]
+	chromedriver!(No symbol) [0x7ff6cb40ff32]
+	chromedriver!(No symbol) [0x7ff6cb40a191]
+	chromedriver!(No symbol) [0x7ff6cb409433]
+	chromedriver!(No symbol) [0x7ff6cb356005]
+	chromedriver!GetHandleVerifier [0x7ff6cb930149+32a6a9]
+	chromedriver!GetHandleVerifier [0x7ff6cb92a715+324c75]
+	chromedriver!GetHandleVerifier [0x7ff6cb94c012+346572]
+	chromedriver!GetHandleVerifier [0x7ff6cb637cb5+32215]
+	chromedriver!GetHandleVerifier [0x7ff6cb64087c+3addc]
+	chromedriver!(No symbol) [0x7ff6cb354d9a]
+	chromedriver!GetHandleVerifier [0x7ff6cba960a8+490608]
+	KERNEL32!BaseThreadInitThunk [0x7ffd8776e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffd891cc3fc+2c]
+
+          </td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><span class="badge-fail">FAIL</span></td>
+          <td>0.0s</td>
+        </tr>
+        <tr>
+          <td>TC11</td>
+          <td>Ch-5: Quadratic Equations</td>
+          <td>State the quadratic formula for solving ax² + bx + c = 0.</td>
+          <td>
+            <details><summary>View reference</summary>
+            <pre>The roots are given by x = (-b ± √(b²-4ac)) / (2a). The expression b²-4ac is called the discriminant.</pre>
+            </details>
+          </td>
+          <td>
+            <details><summary>View response</summary>
+            <pre>(no response)</pre>
+            </details>
+            <br><b>Error:</b> InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6cb61a8e5+14e45]
+	chromedriver!GetHandleVerifier [0x7ff6cb61a950+14eb0]
+	chromedriver!(No symbol) [0x7ff6cb38d4d6]
+	chromedriver!(No symbol) [0x7ff6cb3d8166]
+	chromedriver!(No symbol) [0x7ff6cb40ff32]
+	chromedriver!(No symbol) [0x7ff6cb40a191]
+	chromedriver!(No symbol) [0x7ff6cb409433]
+	chromedriver!(No symbol) [0x7ff6cb356005]
+	chromedriver!GetHandleVerifier [0x7ff6cb930149+32a6a9]
+	chromedriver!GetHandleVerifier [0x7ff6cb92a715+324c75]
+	chromedriver!GetHandleVerifier [0x7ff6cb94c012+346572]
+	chromedriver!GetHandleVerifier [0x7ff6cb637cb5+32215]
+	chromedriver!GetHandleVerifier [0x7ff6cb64087c+3addc]
+	chromedriver!(No symbol) [0x7ff6cb354d9a]
+	chromedriver!GetHandleVerifier [0x7ff6cba960a8+490608]
+	KERNEL32!BaseThreadInitThunk [0x7ffd8776e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffd891cc3fc+2c]
+
+          </td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><span class="badge-fail">FAIL</span></td>
+          <td>0.0s</td>
+        </tr>
+        <tr>
+          <td>TC12</td>
+          <td>Ch-5: Quadratic Equations</td>
+          <td>What is the nature of roots of a quadratic equation when the discriminant b²-4ac > 0?</td>
+          <td>
+            <details><summary>View reference</summary>
+            <pre>When b² - 4ac > 0, the quadratic equation has two distinct real roots: x = (-b + √(b²-4ac)) / (2a)  and  x = (-b - √(b²-4ac)) / (2a).</pre>
+            </details>
+          </td>
+          <td>
+            <details><summary>View response</summary>
+            <pre>(no response)</pre>
+            </details>
+            <br><b>Error:</b> InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6cb61a8e5+14e45]
+	chromedriver!GetHandleVerifier [0x7ff6cb61a950+14eb0]
+	chromedriver!(No symbol) [0x7ff6cb38d4d6]
+	chromedriver!(No symbol) [0x7ff6cb3d8166]
+	chromedriver!(No symbol) [0x7ff6cb40ff32]
+	chromedriver!(No symbol) [0x7ff6cb40a191]
+	chromedriver!(No symbol) [0x7ff6cb409433]
+	chromedriver!(No symbol) [0x7ff6cb356005]
+	chromedriver!GetHandleVerifier [0x7ff6cb930149+32a6a9]
+	chromedriver!GetHandleVerifier [0x7ff6cb92a715+324c75]
+	chromedriver!GetHandleVerifier [0x7ff6cb94c012+346572]
+	chromedriver!GetHandleVerifier [0x7ff6cb637cb5+32215]
+	chromedriver!GetHandleVerifier [0x7ff6cb64087c+3addc]
+	chromedriver!(No symbol) [0x7ff6cb354d9a]
+	chromedriver!GetHandleVerifier [0x7ff6cba960a8+490608]
+	KERNEL32!BaseThreadInitThunk [0x7ffd8776e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffd891cc3fc+2c]
+
+          </td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><span class="badge-fail">FAIL</span></td>
+          <td>0.0s</td>
+        </tr>
+        <tr>
+          <td>TC13</td>
+          <td>Ch-6: Progressions</td>
+          <td>What is the general (nth) term of an Arithmetic Progression (AP)?</td>
+          <td>
+            <details><summary>View reference</summary>
+            <pre>The nth term of an AP is: aₙ = a + (n-1)d, where a is the first term and d is the common difference.</pre>
+            </details>
+          </td>
+          <td>
+            <details><summary>View response</summary>
+            <pre>(no response)</pre>
+            </details>
+            <br><b>Error:</b> InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6cb61a8e5+14e45]
+	chromedriver!GetHandleVerifier [0x7ff6cb61a950+14eb0]
+	chromedriver!(No symbol) [0x7ff6cb38d4d6]
+	chromedriver!(No symbol) [0x7ff6cb3d8166]
+	chromedriver!(No symbol) [0x7ff6cb40ff32]
+	chromedriver!(No symbol) [0x7ff6cb40a191]
+	chromedriver!(No symbol) [0x7ff6cb409433]
+	chromedriver!(No symbol) [0x7ff6cb356005]
+	chromedriver!GetHandleVerifier [0x7ff6cb930149+32a6a9]
+	chromedriver!GetHandleVerifier [0x7ff6cb92a715+324c75]
+	chromedriver!GetHandleVerifier [0x7ff6cb94c012+346572]
+	chromedriver!GetHandleVerifier [0x7ff6cb637cb5+32215]
+	chromedriver!GetHandleVerifier [0x7ff6cb64087c+3addc]
+	chromedriver!(No symbol) [0x7ff6cb354d9a]
+	chromedriver!GetHandleVerifier [0x7ff6cba960a8+490608]
+	KERNEL32!BaseThreadInitThunk [0x7ffd8776e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffd891cc3fc+2c]
+
+          </td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><span class="badge-fail">FAIL</span></td>
+          <td>0.0s</td>
+        </tr>
+        <tr>
+          <td>TC14</td>
+          <td>Ch-6: Progressions</td>
+          <td>In a Geometric Progression (GP), the 3rd term is 24 and the 6th term is 192. Find the 10th term.</td>
+          <td>
+            <details><summary>View reference</summary>
+            <pre>Let a = first term and r = common ratio. a₃ = ar² = 24 and a₆ = ar⁵ = 192. Dividing: r³ = 8 → r = 2. Substituting: a = 6. a₁₀ = ar⁹ = 6 × 2⁹ = 6 × 512 = 3072.</pre>
+            </details>
+          </td>
+          <td>
+            <details><summary>View response</summary>
+            <pre>(no response)</pre>
+            </details>
+            <br><b>Error:</b> InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6cb61a8e5+14e45]
+	chromedriver!GetHandleVerifier [0x7ff6cb61a950+14eb0]
+	chromedriver!(No symbol) [0x7ff6cb38d4d6]
+	chromedriver!(No symbol) [0x7ff6cb3d8166]
+	chromedriver!(No symbol) [0x7ff6cb40ff32]
+	chromedriver!(No symbol) [0x7ff6cb40a191]
+	chromedriver!(No symbol) [0x7ff6cb409433]
+	chromedriver!(No symbol) [0x7ff6cb356005]
+	chromedriver!GetHandleVerifier [0x7ff6cb930149+32a6a9]
+	chromedriver!GetHandleVerifier [0x7ff6cb92a715+324c75]
+	chromedriver!GetHandleVerifier [0x7ff6cb94c012+346572]
+	chromedriver!GetHandleVerifier [0x7ff6cb637cb5+32215]
+	chromedriver!GetHandleVerifier [0x7ff6cb64087c+3addc]
+	chromedriver!(No symbol) [0x7ff6cb354d9a]
+	chromedriver!GetHandleVerifier [0x7ff6cba960a8+490608]
+	KERNEL32!BaseThreadInitThunk [0x7ffd8776e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffd891cc3fc+2c]
+
+          </td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><span class="badge-fail">FAIL</span></td>
+          <td>0.0s</td>
+        </tr>
+        <tr>
+          <td>TC15</td>
+          <td>Ch-6: Progressions</td>
+          <td>Write the formula for the sum of the first n terms of an Arithmetic Progression.</td>
+          <td>
+            <details><summary>View reference</summary>
+            <pre>Sₙ = n/2 × [2a + (n-1)d]  or equivalently  Sₙ = n/2 × (a + l), where a is the first term, d is the common difference, and l is the last term.</pre>
+            </details>
+          </td>
+          <td>
+            <details><summary>View response</summary>
+            <pre>(no response)</pre>
+            </details>
+            <br><b>Error:</b> InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6cb61a8e5+14e45]
+	chromedriver!GetHandleVerifier [0x7ff6cb61a950+14eb0]
+	chromedriver!(No symbol) [0x7ff6cb38d4d6]
+	chromedriver!(No symbol) [0x7ff6cb3d8166]
+	chromedriver!(No symbol) [0x7ff6cb40ff32]
+	chromedriver!(No symbol) [0x7ff6cb40a191]
+	chromedriver!(No symbol) [0x7ff6cb409433]
+	chromedriver!(No symbol) [0x7ff6cb356005]
+	chromedriver!GetHandleVerifier [0x7ff6cb930149+32a6a9]
+	chromedriver!GetHandleVerifier [0x7ff6cb92a715+324c75]
+	chromedriver!GetHandleVerifier [0x7ff6cb94c012+346572]
+	chromedriver!GetHandleVerifier [0x7ff6cb637cb5+32215]
+	chromedriver!GetHandleVerifier [0x7ff6cb64087c+3addc]
+	chromedriver!(No symbol) [0x7ff6cb354d9a]
+	chromedriver!GetHandleVerifier [0x7ff6cba960a8+490608]
+	KERNEL32!BaseThreadInitThunk [0x7ffd8776e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffd891cc3fc+2c]
+
+          </td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><span class="badge-fail">FAIL</span></td>
+          <td>0.0s</td>
+        </tr>
+        <tr>
+          <td>TC16</td>
+          <td>Ch-7: Coordinate Geometry</td>
+          <td>State the distance formula between two points P(x₁, y₁) and Q(x₂, y₂).</td>
+          <td>
+            <details><summary>View reference</summary>
+            <pre>Distance PQ = √[(x₂ - x₁)² + (y₂ - y₁)²].</pre>
+            </details>
+          </td>
+          <td>
+            <details><summary>View response</summary>
+            <pre>(no response)</pre>
+            </details>
+            <br><b>Error:</b> InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6cb61a8e5+14e45]
+	chromedriver!GetHandleVerifier [0x7ff6cb61a950+14eb0]
+	chromedriver!(No symbol) [0x7ff6cb38d4d6]
+	chromedriver!(No symbol) [0x7ff6cb3d8166]
+	chromedriver!(No symbol) [0x7ff6cb40ff32]
+	chromedriver!(No symbol) [0x7ff6cb40a191]
+	chromedriver!(No symbol) [0x7ff6cb409433]
+	chromedriver!(No symbol) [0x7ff6cb356005]
+	chromedriver!GetHandleVerifier [0x7ff6cb930149+32a6a9]
+	chromedriver!GetHandleVerifier [0x7ff6cb92a715+324c75]
+	chromedriver!GetHandleVerifier [0x7ff6cb94c012+346572]
+	chromedriver!GetHandleVerifier [0x7ff6cb637cb5+32215]
+	chromedriver!GetHandleVerifier [0x7ff6cb64087c+3addc]
+	chromedriver!(No symbol) [0x7ff6cb354d9a]
+	chromedriver!GetHandleVerifier [0x7ff6cba960a8+490608]
+	KERNEL32!BaseThreadInitThunk [0x7ffd8776e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffd891cc3fc+2c]
+
+          </td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><span class="badge-fail">FAIL</span></td>
+          <td>0.0s</td>
+        </tr>
+        <tr>
+          <td>TC17</td>
+          <td>Ch-7: Coordinate Geometry</td>
+          <td>State the section formula: find the coordinates of point P that divides segment AB joining A(x₁,y₁) and B(x₂,y₂) internally in ratio m₁:m₂.</td>
+          <td>
+            <details><summary>View reference</summary>
+            <pre>P = ((m₁x₂ + m₂x₁)/(m₁ + m₂), (m₁y₂ + m₂y₁)/(m₁ + m₂)).</pre>
+            </details>
+          </td>
+          <td>
+            <details><summary>View response</summary>
+            <pre>(no response)</pre>
+            </details>
+            <br><b>Error:</b> InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6cb61a8e5+14e45]
+	chromedriver!GetHandleVerifier [0x7ff6cb61a950+14eb0]
+	chromedriver!(No symbol) [0x7ff6cb38d4d6]
+	chromedriver!(No symbol) [0x7ff6cb3d8166]
+	chromedriver!(No symbol) [0x7ff6cb40ff32]
+	chromedriver!(No symbol) [0x7ff6cb40a191]
+	chromedriver!(No symbol) [0x7ff6cb409433]
+	chromedriver!(No symbol) [0x7ff6cb356005]
+	chromedriver!GetHandleVerifier [0x7ff6cb930149+32a6a9]
+	chromedriver!GetHandleVerifier [0x7ff6cb92a715+324c75]
+	chromedriver!GetHandleVerifier [0x7ff6cb94c012+346572]
+	chromedriver!GetHandleVerifier [0x7ff6cb637cb5+32215]
+	chromedriver!GetHandleVerifier [0x7ff6cb64087c+3addc]
+	chromedriver!(No symbol) [0x7ff6cb354d9a]
+	chromedriver!GetHandleVerifier [0x7ff6cba960a8+490608]
+	KERNEL32!BaseThreadInitThunk [0x7ffd8776e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffd891cc3fc+2c]
+
+          </td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><span class="badge-fail">FAIL</span></td>
+          <td>0.0s</td>
+        </tr>
+        <tr>
+          <td>TC18</td>
+          <td>Ch-8: Similar Triangles</td>
+          <td>State the Basic Proportionality Theorem (Thales' Theorem).</td>
+          <td>
+            <details><summary>View reference</summary>
+            <pre>If a line is drawn parallel to one side of a triangle intersecting the other two sides, then it divides those two sides in the same ratio. i.e., if DE ∥ BC in △ABC, then AD/DB = AE/EC.</pre>
+            </details>
+          </td>
+          <td>
+            <details><summary>View response</summary>
+            <pre>(no response)</pre>
+            </details>
+            <br><b>Error:</b> InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6cb61a8e5+14e45]
+	chromedriver!GetHandleVerifier [0x7ff6cb61a950+14eb0]
+	chromedriver!(No symbol) [0x7ff6cb38d4d6]
+	chromedriver!(No symbol) [0x7ff6cb3d8166]
+	chromedriver!(No symbol) [0x7ff6cb40ff32]
+	chromedriver!(No symbol) [0x7ff6cb40a191]
+	chromedriver!(No symbol) [0x7ff6cb409433]
+	chromedriver!(No symbol) [0x7ff6cb356005]
+	chromedriver!GetHandleVerifier [0x7ff6cb930149+32a6a9]
+	chromedriver!GetHandleVerifier [0x7ff6cb92a715+324c75]
+	chromedriver!GetHandleVerifier [0x7ff6cb94c012+346572]
+	chromedriver!GetHandleVerifier [0x7ff6cb637cb5+32215]
+	chromedriver!GetHandleVerifier [0x7ff6cb64087c+3addc]
+	chromedriver!(No symbol) [0x7ff6cb354d9a]
+	chromedriver!GetHandleVerifier [0x7ff6cba960a8+490608]
+	KERNEL32!BaseThreadInitThunk [0x7ffd8776e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffd891cc3fc+2c]
+
+          </td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><span class="badge-fail">FAIL</span></td>
+          <td>0.0s</td>
+        </tr>
+        <tr>
+          <td>TC19</td>
+          <td>Ch-9: Tangents & Secants</td>
+          <td>A tangent at a point on a circle is perpendicular to the radius at that point. True or False? Explain.</td>
+          <td>
+            <details><summary>View reference</summary>
+            <pre>True. The tangent to a circle at any point is perpendicular to the radius drawn to that point of tangency.</pre>
+            </details>
+          </td>
+          <td>
+            <details><summary>View response</summary>
+            <pre>(no response)</pre>
+            </details>
+            <br><b>Error:</b> InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6cb61a8e5+14e45]
+	chromedriver!GetHandleVerifier [0x7ff6cb61a950+14eb0]
+	chromedriver!(No symbol) [0x7ff6cb38d4d6]
+	chromedriver!(No symbol) [0x7ff6cb3d8166]
+	chromedriver!(No symbol) [0x7ff6cb40ff32]
+	chromedriver!(No symbol) [0x7ff6cb40a191]
+	chromedriver!(No symbol) [0x7ff6cb409433]
+	chromedriver!(No symbol) [0x7ff6cb356005]
+	chromedriver!GetHandleVerifier [0x7ff6cb930149+32a6a9]
+	chromedriver!GetHandleVerifier [0x7ff6cb92a715+324c75]
+	chromedriver!GetHandleVerifier [0x7ff6cb94c012+346572]
+	chromedriver!GetHandleVerifier [0x7ff6cb637cb5+32215]
+	chromedriver!GetHandleVerifier [0x7ff6cb64087c+3addc]
+	chromedriver!(No symbol) [0x7ff6cb354d9a]
+	chromedriver!GetHandleVerifier [0x7ff6cba960a8+490608]
+	KERNEL32!BaseThreadInitThunk [0x7ffd8776e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffd891cc3fc+2c]
+
+          </td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><span class="badge-fail">FAIL</span></td>
+          <td>0.0s</td>
+        </tr>
+        <tr>
+          <td>TC20</td>
+          <td>Ch-11: Trigonometry</td>
+          <td>State the fundamental trigonometric identity sin²θ + cos²θ.</td>
+          <td>
+            <details><summary>View reference</summary>
+            <pre>sin²θ + cos²θ = 1. This is the Pythagorean identity. Derived identities: 1 + tan²θ = sec²θ and 1 + cot²θ = cosec²θ.</pre>
+            </details>
+          </td>
+          <td>
+            <details><summary>View response</summary>
+            <pre>(no response)</pre>
+            </details>
+            <br><b>Error:</b> InvalidSessionIdException: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6cb61a8e5+14e45]
+	chromedriver!GetHandleVerifier [0x7ff6cb61a950+14eb0]
+	chromedriver!(No symbol) [0x7ff6cb38d4d6]
+	chromedriver!(No symbol) [0x7ff6cb3d8166]
+	chromedriver!(No symbol) [0x7ff6cb40ff32]
+	chromedriver!(No symbol) [0x7ff6cb40a191]
+	chromedriver!(No symbol) [0x7ff6cb409433]
+	chromedriver!(No symbol) [0x7ff6cb356005]
+	chromedriver!GetHandleVerifier [0x7ff6cb930149+32a6a9]
+	chromedriver!GetHandleVerifier [0x7ff6cb92a715+324c75]
+	chromedriver!GetHandleVerifier [0x7ff6cb94c012+346572]
+	chromedriver!GetHandleVerifier [0x7ff6cb637cb5+32215]
+	chromedriver!GetHandleVerifier [0x7ff6cb64087c+3addc]
+	chromedriver!(No symbol) [0x7ff6cb354d9a]
+	chromedriver!GetHandleVerifier [0x7ff6cba960a8+490608]
+	KERNEL32!BaseThreadInitThunk [0x7ffd8776e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ffd891cc3fc+2c]
+
+          </td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><div class="score-bar-container"><div class="score-bar" style="width:0%;background:#e74c3c"></div></div> 0.0%</td>
+          <td><span class="badge-fail">FAIL</span></td>
+          <td>0.0s</td>
+        </tr></tbody>
+</table>
+
+<h2>Scoring Methodology</h2>
+<ul>
+  <li><b>Sequence Similarity (25%):</b> Character-level overlap between reference and AI response.</li>
+  <li><b>Token F1 (30%):</b> Word-level precision/recall F1 (stop-words excluded).</li>
+  <li><b>Keyword Hit-Rate (45%):</b> Percentage of essential concept keywords found in the response.</li>
+  <li><b>Combined Score:</b> Weighted sum of the three metrics above.</li>
+  <li>A test <b>PASSES</b> when Combined Score ≥ 40% and no error occurred.</li>
+</ul>
+</body></html>
